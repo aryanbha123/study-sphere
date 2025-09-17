@@ -7,7 +7,7 @@ const HomeLayout: React.FC = () => {
   return (
     <>
       <Navbar />
-      <Outlet /> {/* This is where nested routes render */}
+      <Outlet /> 
       <Footer />
     </>
   )
