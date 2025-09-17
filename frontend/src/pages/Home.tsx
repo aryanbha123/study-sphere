@@ -1,7 +1,10 @@
 import type { FC } from "react";
 import { Helmet } from "react-helmet-async";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Hero from "../components/home/Hero";
+import Achievements from "../components/home/Achievements";
+import Bundel from "../components/home/Bundel";
+import FAQ from "../components/home/FAQ";
+import Services from "../components/home/Services";
 
 interface HomeProps {
   title: string; 
@@ -13,9 +16,11 @@ const Home: FC<HomeProps> = ({ title }) => {
       <Helmet>
         <title>{title}</title>
       </Helmet>
-      <Navbar/>
-      <h1>Welcome to the Home Page</h1>
-      <Footer/>
+      <Hero/>
+      <Bundel/>
+      <Achievements/>
+      <Services/>
+      <FAQ/>
     </>
   );
 };
