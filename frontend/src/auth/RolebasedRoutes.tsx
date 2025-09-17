@@ -3,7 +3,7 @@ import { type JSX } from "react";
 import { useSelector } from "react-redux";
 import { type RootState } from '../store/store';
 const RoleBasedRoutes = (): JSX.Element => {
-  const user = useSelector((s : RootState ) => s.auth.user); // normally from AuthContext/Redux
+  const user = useSelector((s : RootState ) => s.auth.user); 
   const path: string | null = localStorage.getItem("requested_path");
 
   if (!user) {
