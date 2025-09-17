@@ -12,7 +12,7 @@ app.get("*", (req, res) => {
     <App />,
     {
       onShellReady() {
-        pipe(res) // start streaming HTML as soon as it’s ready
+        pipe(res) 
       },
       onError(err) {
         console.error(err)
