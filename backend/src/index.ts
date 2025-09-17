@@ -4,7 +4,7 @@ import dotenv  , {configDotenv } from "dotenv";
 // load environment variables
 dotenv.config({ path: "./src/.env.local" });
 const app: Express = express();
-const PORT: number = parseInt(process.env.PORT || "3000", 10);
+const PORT: number = parseInt(process.env.PORT || "5000", 10);
 
 // sample route
 app.get("/", (req : Request, res : Response) => {
@@ -14,4 +14,5 @@ app.get("/", (req : Request, res : Response) => {
 app.listen(PORT, (): void => {
   console.log(`Server is running at http://localhost:${PORT}`);
 });
+
 
